@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <title>Contact Lucian</title>  <!-- Contact page -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Viewport tag! -->
+  <meta charset="utf-8">
+  <link rel="icon" type="image/png" href="lucian-favicon-32x32.png" sizes="32x32"/> <!-- My favicons-->
+  <link rel="icon" type="image/png" href="lucian-favicon-16x16.png" sizes="16x16"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Courgette|Merienda:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+</head>
+
+<body>
+        <header>
+        <img src="img/lucian_murmurache_logo.png" alt="Brand logo" class="page-header__logo">
+      <form action="/action_page.php" target="_blank" method="post" id="contact-form"> <!-- Contact form goes right about here! -->
+          <p>Contact form:</p><br>
+          <label class="standard-label" for="user-firstname">
+            *First name: <br>
+          </label>
+          <input type="text" name="firstname" id="user-firstname" required><br>
+          <label class="standard-label" for="user-lastname">
+            *Last name: <br>
+          </label>
+          <input type="text" name="lastname" id="user-lastname" required><br>
+          <label class="standard-label" for="user-emailaddress">
+            *Email address: <br>
+          </label>
+          <input type="email" name="emailaddress" id="user-emailaddress" required><br>
+          <label class="standard-label" for="user-telephonenumber">
+            Telephone number(optional): <br>
+          </label>
+          <input type="tel" name="telephonenumber" id="user-telephonenumber" required><br>
+          <label class="standard-label">
+            *Message: <br>
+          </label>
+          <label class="standard-label" for="message">
+          <textarea name="message" rows="10" cols="30" maxlength="900" placeholder="Maximum length of 900 characters" id="message" required></textarea><br><br>
+        </label>
+        <label class="standard-label" for="submit-message">
+          <input type="submit" id="submit-message"><br><br>
+          Sections marked with * are mandatory!
+        </label><br>
+      </form>
+    </header>
+
+  <footer>
+    <h2>Contact details:</h2>
+      <p> Lucian Murmurache<br><br><a href="mailto:noreply@botmail.com">Contact me</a><br><br>Telephone: <a href="+49123456789" target="_blank">+49 1234 56789</a><br><br>Skype: <a href="skype:lucian"> Lucian</a><br><br>LinkedIn: <a href="https://de.linkedin.com/in/lucian-murmurache-88155473" target="_blank"> Lucian</a>
+  </footer>
+
+  <footer>
+    <p>Find me on</p>
+    <a href="https://github.com/lucianmurmurache" target="_blank">
+      <img src="img/github_icon.svg" alt="github logo" class="github-logo">
+    </a>
+    <a href="https://de.linkedin.com/in/lucian-murmurache-88155473" target="_blank">
+      <img src="img/linkedin_icon.svg" alt="linkedin logo" class="linkedin-logo">
+    </a>
+  </footer>
+</body>
+
+</html>

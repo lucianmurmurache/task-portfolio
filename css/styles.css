@@ -1,0 +1,279 @@
+
+/*Colors*/
+:root {
+  --color-primary: #FEDAB2;
+  --color-secondary: #2F1D08;
+  --color-primary-button: #251F0F;
+  --color-span: #FEDAC9; /*span*/
+  --color-link1: #FE2712; /*link*/
+  --color-link2: #E57C03; /*link visited*/
+  --color-link3: #F7D4E3; /*active link*/
+  --black: #000;
+  --font-weight4: 400;
+  --font-weight7: 700;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  font-family: 'Courgette, Merienda' , sans-serif; /* sans-serif is a back-up in case for some reason the browser cannot display Lato*/
+  font-weight: var(--font-weight4);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+h1 {
+  color: var(--color-secondary);
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: var(--font-weight7);
+}
+
+h2 {
+  color: var(--color-secondary);
+  margin-left: 20px;
+  font-size: 24px;
+  font-weight: var(--font-weight7);
+}
+
+h3 {
+  color: var(--color-secondary);
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: var(--font-weight7);
+}
+
+span {
+  background-color: var(--color-span);
+}
+
+a:link {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all 0.2s linear, 0.2s background-color, 0.4s font-size;
+}
+
+a:visited {
+  color: var(--color-link1); /* Visited link! */
+  text-decoration: underline;
+}
+
+a:hover, a:focus {
+  color:  var(--color-link2);
+  text-decoration: underline;
+}
+
+a:active {
+  color: var(--color-link3); /* Selected link! */
+  text-decoration: underline;
+}
+
+.button, button {
+  border: none; /* resets the border & overwrites browser defaults */
+  display: inline-block;
+  font-family: inherit; /* inherits the font from ouside the container */
+  background-color: var(--color-primary-button); /* background colour styling */
+  color: var(--black); /* font colour of button */
+  text-decoration: none; /* text decoration such as underline of the button */
+  padding: 4px; /* adds spacing to button */
+  border-radius: 3px; /* to be discussed later in the course, ADD DETAILS HERE */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3); /* gives button bottom border with 2px width and colour in RGBA format */
+  transition: 0.5s opacity, 0.5s background-color, 0.4s font-size;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  cursor: pointer; /* hand when hovering over with cursor */
+  opacity: 0.7; /* reduces opacity by 70% */
+  font-size: 16px;
+}
+
+.navigation-list__item--active {
+  text-decoration: none;
+}
+
+.navigation-list {
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.profile__photo {
+  float: left;
+  width: 100%;
+  height: auto;
+  max-height: 550px;
+  max-width: 500px;
+  border-radius: 50%;
+}
+
+.profile {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.page-footer {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-header {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  flex-direction: row;
+}
+
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.page-header__item {
+  flex: 0 1 200px;
+}
+
+.copyright_summary {
+  cursor: pointer; /* Hand when hovering over with cursor */
+}
+
+.work-list__item {  /* Grid fallback (older browsers) */
+  display: inline-block;
+  width: 33%;
+}
+
+.work-list {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 15px;
+  text-align: left;
+}
+
+.work-list__item {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #ffe5c7;
+  width:auto;
+}
+
+.work-list__item:last-child {
+  grid-column: 3/3;
+  grid-row: 1/3;
+}
+
+/* "all" in this case represents screen print and speech */
+@media all and (max-width: 500px) {
+  .work-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* If screen equal/bigger than 500, equal/smaller than 750px */
+@media all and (min-width: 500px) and (max-width: 750px) {
+  /* changes 3-column grid to 2-column grid*/
+  .work-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 750px) {
+  /* Shared code*/
+  .work-list {
+    grid-gap: 10px;
+  }
+  .work-list__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  20% {
+    fill: #ebc149;
+  }
+  40% {
+    fill: #fcffad;
+  }
+  60% {
+    fill: #f0f571;
+  }
+  80 {
+    fill: #ff6512;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+
+/*
+The below line can be also written as:
+.sun {
+animation-duration: 4s;
+animation-name: color-change;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-timing-function: linear;
+}*/
+.sun {
+  animation: 12s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 35px); /* the value 0 requires no ´px´ after it*/
+  }
+  to {
+    transform: translate(150px, 35px);
+  }
+}
+
+/*
+As above, the same goes for the below:
+.cloud-front {
+animation-duration: 30s;
+animation-name: cloud-move;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-timing-function: linear;
+}
+*/
+.cloud-front {
+  animation: 24s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(450px, 45px);
+  }
+  to {
+    transform: translate(110px, 45px);
+  }
+}
+
+.cloud-back {
+  animation: 28s cloud-move-reverse infinite alternate linear;
+}

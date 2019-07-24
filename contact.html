@@ -13,38 +13,48 @@
 </head>
 
 <body>
-        <header>
-        <img src="img/lucian_murmurache_logo.png" alt="Brand logo" class="page-header__logo">
-      <form action="https://murmurache.com" target="_blank" method="get" id="contact-form"> <!-- Contact form goes right about here! -->
-          <p>Contact form:</p><br>
-          <label class="standard-label" for="user-firstname">
-            *First name: <br>
-          </label>
-          <input type="text" name="firstname" id="user-firstname" placeholder="John" required><br>
-          <label class="standard-label" for="user-lastname">
-            *Last name: <br>
-          </label>
-          <input type="text" name="lastname" id="user-lastname" placeholder="Doe" required><br>
-          <label class="standard-label" for="user-emailaddress">
-            *Email address: <br>
-          </label>
-          <input type="email" name="emailaddress" id="user-emailaddress" placeholder="example@email.com" required><br>
-          <label class="standard-label" for="user-telephonenumber">
-            Telephone number(optional): <br>
-          </label>
-          <input type="tel" name="telephonenumber" id="user-telephonenumber" placeholder="+49 123 56 78 90"><br>
-          <label class="standard-label">
-            *Message: <br>
-          </label>
-          <label class="standard-label" for="message">
-          <textarea name="message" rows="10" cols="30" maxlength="900" placeholder="Maximum length of 900 characters" id="message" required></textarea><br><br>
-        </label>
-        <label class="standard-label" for="submit-message">
-          <input type="submit" id="submit-message"><br><br>
-          Sections marked with * are mandatory!
-        </label><br>
-      </form>
-    </header>
+  <header>
+    <img src="img/lucian_murmurache_logo.png" alt="Brand logo" class="page-header__logo">
+    <form action="https://murmurache.com" target="_blank" method="get" id="contact-form"> <!-- Contact form goes right about here! -->
+      <p>Contact form:</p><br>
+      <label class="standard-label" for="user-firstname">
+        *First name: <br>
+      </label>
+      <input type="text" name="firstname" id="user-firstname" placeholder="John" required><br>
+      <label class="standard-label" for="user-lastname">
+        *Last name: <br>
+      </label>
+      <input type="text" name="lastname" id="user-lastname" placeholder="Doe" required><br>
+      <label class="standard-label" for="user-emailaddress">
+        *Email address: <br>
+      </label>
+      <input type="email" name="emailaddress" id="user-emailaddress" placeholder="example@email.com" required><br>
+      <label class="standard-label" for="user-telephonenumber">
+        Telephone number(optional): <br>
+      </label>
+      <input type="tel" name="telephonenumber" id="user-telephonenumber" placeholder="+49 123 56 78 90"><br>
+      <label class="standard-label">
+        <label for="country">Continent</label>
+        <select id="country" name="country">
+          <option value="asia">Asia</option>
+          <option value="africa">Africa</option>
+          <option value="europe">Europe</option>
+          <option value="northamerica">North America</option>
+          <option value="southamerica">South America</option>
+          <option value="antarctica">Antarctica</option>
+          <option value="australia">Australia</option>
+        </select><br>
+        *Message: <br>
+      </label>
+      <label class="standard-label" for="message">
+        <textarea name="message" rows="10" cols="30" maxlength="900" placeholder="Maximum length of 900 characters" id="message" required></textarea><br><br>
+      </label>
+      <label class="standard-label" for="submit-message">
+        <input type="submit" id="submit-message"><br><br>
+        Sections marked with * are mandatory!
+      </label><br>
+    </form>
+  </header>
 
   <footer>
     <p>Find me on</p>

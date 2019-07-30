@@ -14,27 +14,25 @@
 
 <body>
   <header>
-    <img src="img/lucian_murmurache_logo.png" alt="Brand logo" class="page-header__logo">
+    <img src="img/lucian_logo4.png" alt="Brand logo" class="page-header__logo">
+  </header>
+  <header class="contact-form">
     <form action="https://murmurache.com" target="_blank" method="get" id="contact-form"> <!-- Contact form goes right about here! -->
-      <p>Contact form:</p><br>
-      <label class="standard-label" for="user-firstname">
-        *First name: <br>
+      <h1>Contact form</h1>
+      <label class="standard-label" for="user-fullname">
+        *Full name:<br>
       </label>
-      <input type="text" name="firstname" id="user-firstname" required><br>
-      <label class="standard-label" for="user-lastname">
-        *Last name: <br>
-      </label>
-      <input type="text" name="lastname" id="user-lastname" required><br>
+      <input type="text" name="fullname" id="user-fullname" required><br>
       <label class="standard-label" for="user-emailaddress">
-        *Email address: <br>
+        *Email address:<br>
       </label>
       <input type="email" name="emailaddress" id="user-emailaddress" required><br>
-      <label class="standard-label" for="user-telephonenumber">
-        Telephone number(optional): <br>
+      <label class="standard-label" for="user-telephone">
+        Telephone (optional):<br>
       </label>
-      <input type="tel" name="telephonenumber" id="user-telephonenumber"><br>
+      <input type="tel" name="telephone" id="user-telephone"><br>
       <label class="standard-label" for="country">
-        Continent<br>
+        Continent:<br>
         <select id="country" name="country">
           <option value="asia">Asia</option>
           <option value="africa">Africa</option>
@@ -56,14 +54,16 @@
     </form>
   </header>
 
-  <footer>
-    <p>Find me on</p>
-    <a href="https://github.com/lucianmurmurache" target="_blank">
-      <img src="img/github_icon.svg" alt="github logo" class="github-logo">
-    </a>
-    <a href="https://de.linkedin.com/in/lucian-murmurache-88155473" target="_blank">
-      <img src="img/linkedin_icon.svg" alt="linkedin logo" class="linkedin-logo">
-    </a>
+  <footer class="page-footer">
+    <p>Find me on </p>
+    <div class="social-media">
+      <a href="https://github.com/lucianmurmurache" class="github-logo" target="_blank">
+        <img src="img/github_icon.svg" alt="github logo" class="github-logo">
+      </a>
+      <a href="https://de.linkedin.com/in/lucian-murmurache-88155473" class="linkedin-logo" target="_blank">
+        <img src="img/linkedin_icon.svg" alt="linkedin logo" class="linkedin-logo">
+      </a>
+    </div>
   </footer>
 </body>
 

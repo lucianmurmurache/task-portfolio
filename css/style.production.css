@@ -3,12 +3,15 @@
 :root {
   --color-primary: #FEDAB2;
   --color-secondary: #2F1D08;
-  --color-primary-button: #251F0F;
+  --color-tertiary: #ffb563; /*recently added 30 07*/
+  --color-quaternary: #ffd5a6; /*decently added 30 07*/
+  --color-primary-button: #ffa047;
   --color-span: #FEDAC9; /*span*/
   --color-link1: #FE2712; /*link*/
   --color-link2: #E57C03; /*link visited*/
   --color-link3: #F7D4E3; /*active link*/
   --black: #000;
+  --white: #FFF;
   --gray: #CFCFCF;
   --font-weight4: 400;
   --font-weight7: 700;
@@ -115,9 +118,43 @@ button:focus,
   list-style-type: none;
 }
 
+/*recent changes 30 07*/
 .navigation-list li {
   display: inline-block;
   margin-left: 15px;
+  float: right;
+}
+/*recently added 30 07*/
+.navigation-list a {
+  display: block;
+  color: var(--black);
+  text-align: center;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+
+.navigation-list a:hover {
+  background-color: var(--color-quaternary);
+  opacity: 0.7;
+  font-size: 17px;
+  -webkit-transition: 0.5s opacity, 0.5s background-color, 0.4s font-size;
+  -o-transition: 0.5s opacity, 0.5s background-color, 0.4s font-size;
+  transition: 0.5s opacity, 0.5s background-color, 0.4s font-size;
+}
+
+/*recent changes 30 07*/
+.navigation-list ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--color-tertiary);
+}
+.navigation-list__item {
+  text-align: center;
+  border-bottom: 1px solid #555;
+  border-top: 1px solid #555;
+  padding: 6px;
 }
 
 .profile__photo {
@@ -152,19 +189,26 @@ button:focus,
           align-items: center;
 }
 
-.github-logo,
-.linkedin-logo {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.about-footer {
+  font-weight: var(--font-weight4);
+  margin: 15px;
+  padding: 15px;
 }
+/*recent change 30 07*/
+
+/*.social-media {
+  display: inline-block;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+ .github-logo,
+.linkedin-logo {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+} */
 
 .page-header {
   display: -webkit-box;

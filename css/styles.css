@@ -167,7 +167,7 @@ button:focus,
   clear: both;
 }
 
-.about-footer {
+.about-div {
   font-weight: var(--font-weight4);
   padding: 15px;
   margin: 15px;
@@ -239,6 +239,29 @@ button:focus,
   grid-column: 3/3;
   grid-row: 1/3;
 }
+
+/* Back to top link styling below*/
+.back-to__top:link {
+  text-decoration: none;
+  color: #000;
+}
+
+.back-to__top:visited {
+  text-decoration: none;
+  color: #990000;
+}
+
+.back-to__top:hover {
+  text-decoration: none;
+  color: #0066ff;
+}
+
+.back-to__top:active {
+  text-decoration: none;
+  color: #0066ff;
+}
+/* Back to top link styling above*/
+
 
 /* "all" in this case represents screen print and speech */
 @media all and (max-width: 500px) {

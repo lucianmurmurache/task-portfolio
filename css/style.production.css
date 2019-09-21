@@ -287,21 +287,30 @@ button:focus,
 /* Back to top link styling below*/
 .back-to__top:link {
   text-decoration: none;
+  margin: 10px;
   color: #000;
 }
 
 .back-to__top:visited {
   text-decoration: none;
+  margin: 10px;
   color: #990000;
 }
 
 .back-to__top:hover {
+  -webkit-transition: 1.0s;
+  -o-transition: 1.0s;
+  transition: 1.0s;
+  border: 2px outset rgba(153, 153, 153);
   text-decoration: none;
+  margin: 10px;
+  font-size: 17px;
   color: #0066ff;
 }
 
 .back-to__top:active {
   text-decoration: none;
+  margin: 10px;
   color: #0066ff;
 }
 /* Back to top link styling above*/

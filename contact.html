@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
-  <title>Contact Lucian</title>  <!-- Contact page -->
-  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Viewport tag! -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
-  <link rel="icon" type="image/png" href="lucian-favicon-32x32.png" sizes="32x32"/> <!-- My favicons-->
-  <link rel="icon" type="image/png" href="lucian-favicon-16x16.png" sizes="16x16"/>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Contact Lucian</title>
+    <link rel="icon" type="image/png" href="img/lucian-favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="img/lucian-favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>
@@ -18,16 +18,16 @@
     <form name="contact-form" action="mail.php" method="POST" enctype="multipart/form-data">
 
       <label for="fname">Name</label>
-      <input type="text" id="fname" name="fname" placeholder="Your name..">
+      <input type="text" id="fname" name="fname" placeholder="Your name.." maxlength="35" required />
 
       <label for="email">Email</label>
-      <input type="text" id="email" name="email" placeholder="Your email..">
+      <input type="email" id="email" name="email" placeholder="Your email.." maxlength="30" required />
 
       <label for="phone">Telephone</label>
-      <input type="text" id="phone" name="phone" placeholder="Your number..">
+      <input type="tel" id="phone" name="phone" placeholder="Your number.." maxlength="15" />
 
       <label for="message">Message</label>
-      <textarea id="message" name="message" placeholder="Your message.." style="height:200px"></textarea>
+      <textarea id="message" name="message" placeholder="Your message.." style="height:200px" maxlength="1000" required /></textarea>
 
       <input type="submit" value="Submit">
     </form>

@@ -258,12 +258,18 @@ input[type=submit]:hover {
   padding: 20px;
 }
 
-/*Contact form*/
+/*Contact form-up*/
 
 .work-list__item {
   /* Grid fallback (older browsers) */
   display: inline-block;
   width: 33%;
+}
+
+.project-screenshot {
+  max-width: 100%;
+  border-radius: 5px;
+  height: 250px;
 }
 
 .work-list {
